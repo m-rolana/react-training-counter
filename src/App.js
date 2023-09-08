@@ -1,14 +1,19 @@
-import './App.css';
-import './Counter';
-import Counter from './Counter';
+import { ThemeProvider } from '@mui/material/styles';
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+
+import theme from "./theme";
+import Counter from "./Counter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Counter />
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="sm">
+        <Box sx={{ my: 4 }} textAlign='center'>
+          <Counter />
+        </Box>
+      </Container>
+    </ThemeProvider>
   );
 }
 
