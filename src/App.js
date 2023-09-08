@@ -9,7 +9,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="sm">
-        <Box textAlign="center">
+        <Box sx={{ margin: 10 }} textAlign="center">
           <Counter />
         </Box>
       </Container>
