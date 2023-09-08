@@ -1,4 +1,4 @@
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="sm">
-        <Box sx={{ my: 4 }} textAlign='center'>
+        <Box textAlign="center">
           <Counter />
         </Box>
       </Container>
